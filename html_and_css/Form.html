@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="author"
+    content="Ashesh" />
+  <meta http-equiv="pragma"
+    content="no-cache" />
+  <title>HTML Forms_EXP-I</title>
+</head>
+<body>
+<!--All forms require some amount of background works in other languages such as
+    PHP, C#, VB.net,or Java.Here in this case this work is provided by 
+	"http://www.example.com/.... .php" URL which uses PHP for processing/validation etc.
+-->
+  <form action="http://www.example.com/review.php" method="get">
+    
+	<fieldset>
+      <legend>Your Details:</legend>
+      <label>Name: <input type="text" name="name" size="30" maxlength="100" /></label><br />
+      <label>Email: <input type="email" name="email" size="30" maxlength="100" /></label><br />
+    </fieldset>
+	
+	<br />
+  
+  <fieldset>
+    <legend>Your Review:</legend>
+    <p>
+      <label for="hear-about">How did you hear about us?</label> 
+      <select name="referrer" id="hear-about">
+        <option value="google">
+          Google
+        </option>
+        <option value="friend">
+          Friend
+        </option>
+        <option value="advert">
+          Advert
+        </option>
+        <option value="other">
+          Other
+        </option>
+      </select>
+    </p>
+    <p>
+      Would you visit again?<br />
+      <label><input type="radio" name="rating" value="yes" /> Yes</label> <label><input type="radio" name="rating" value="no" /> No</label> <label><input type="radio" name="rating" value=
+        "maybe" /> Maybe</label>
+    </p>
+    <p>
+      <label for="comments">Comments:</label><br />
+      <textarea rows="4" cols="40" id="comments">
+      </textarea>
+    </p>
+    <label><input type="checkbox" name="subscribe" checked="checked" /> Sign me up for email updates</label><br />
+    <input type="submit" value="Submit review" />
+  </fieldset>
+  </form>
+  
+  <br/>
+  <!--Example of form validation in HTML5-->
+  <p>You can also continue with a registered account:</p>
+  <form action="http://www.example.com/login/" method="post">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required="required" /></title><br />
+    <label for="password">Password:</label>
+    <input type="password" name="password" required="required" />
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
